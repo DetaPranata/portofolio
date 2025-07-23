@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #8497c0, #7b8fd1);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+.hero {
+  max-width: 800px;
+  width: 90%; /* supaya fleksibel di layar kecil */
+  background: white;
+  color: #333;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  max-width: 100%; /* responsif */
+  border-radius: 50%;
+  border: 5px solid #7499df;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin: 10px 0;
+  font-size: 1.5em; /* pakai em supaya fleksibel */
+  color: #6b92da;
+}
+
+.hero p {
+  margin: 10px auto;
+  max-width: 500px;
+  font-size: 1em;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  background: #4481f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: background 0.3s ease;
+  font-size: 1em;
+}
+
+.buttons a:hover {
+  background: #0059ff;
+}
+
+.project {
+  text-align: center;
+}
+
+/* Media Query: atur tampilan di HP */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .hero {
+    padding: 10px;
+  }
+
+  .buttons a {
+    display: block; /* tombol turun ke bawah */
+    margin: 10px auto;
+    width: 80%; /* tombol lebih lebar dan enak di tap */
+  }
+}
