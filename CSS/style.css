@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #8497c0, #7b8fd1);
+  background: url(../images/crossword.png) repeat,
+    linear-gradient(#194fb3, #7499df);
   color: #fff;
 }
 
@@ -23,8 +24,8 @@ header p {
 
 .hero {
   max-width: 800px;
-  width: 90%; /* supaya fleksibel di layar kecil */
-  background: white;
+  width: 90%;
+  background: url(../images/crossword.png) repeat, white;
   color: #333;
   margin: 30px auto;
   padding: 30px;
@@ -36,15 +37,21 @@ header p {
 .hero img {
   width: 150px;
   height: 150px;
-  max-width: 100%; /* responsif */
+  max-width: 100%;
   border-radius: 50%;
   border: 5px solid #7499df;
   margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.hero img:hover {
+  border: 5px solid rgb(73, 129, 194);
+  transition: 0.2s;
 }
 
 .hero h2 {
   margin: 10px 0;
-  font-size: 1.5em; /* pakai em supaya fleksibel */
+  font-size: 1.5em;
   color: #6b92da;
 }
 
