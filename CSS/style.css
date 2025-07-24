@@ -81,8 +81,86 @@ header p {
   background: #0059ff;
 }
 
-.project {
+/* Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007acc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.project-info a:hover {
+  background-color: #005f99;
+}
+
+/* Footer */
+.footer {
+  background: #4582f3;
+  color: #fff;
   text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 8px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #d0e9ff;
 }
 
 /* Media Query: atur tampilan di HP */
