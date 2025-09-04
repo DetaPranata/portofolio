@@ -96,6 +96,7 @@ header p {
   max-width: 350px;
   margin: 20px auto;
   transition: transform 0.3s ease;
+  height: 400px;
 }
 
 .project-card:hover {
