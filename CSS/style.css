@@ -96,7 +96,7 @@ header p {
   max-width: 350px;
   margin: 20px auto;
   transition: transform 0.3s ease;
-  height: 400px;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -190,5 +190,9 @@ ul {
     display: block; /* tombol turun ke bawah */
     margin: 10px auto;
     width: 80%; /* tombol lebih lebar dan enak di tap */
+  }
+  ul {
+    display: block;
+    justify-content: center;
   }
 }
