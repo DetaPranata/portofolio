@@ -86,6 +86,11 @@ header p {
 .buttons a:hover {
   background: #0059ff;
 }
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Project Card */
 .project-card {
@@ -140,12 +145,6 @@ header p {
   background-color: #005f99;
 }
 
-ul {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-}
-
 /* Footer */
 .footer {
   background: #4582f3;
@@ -190,9 +189,5 @@ ul {
     display: block; /* tombol turun ke bawah */
     margin: 10px auto;
     width: 80%; /* tombol lebih lebar dan enak di tap */
-  }
-  ul {
-    display: block;
-    justify-content: center;
   }
 }
