@@ -1,127 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile & Karya - Adeta Raka Pranata</title>
-    <!-- Style -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Style CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&display=swap"
       rel="stylesheet"
     />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Profile & Karya - Adeta Raka Pranata" />
-    <meta
-      property="og:description"
-      content="Portofolio pribadi saya sebagai gitaris band Artefak dan web enthusiast."
-    />
-    <meta
-      property="og:image"
-      content="https://detapranata.github.io/portofolio/logo.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://detapranata.github.io/portofolio/"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Profile & Karya - Adeta Raka Pranata" />
-    <meta
-      name="twitter:description"
-      content="Portofolio pribadi saya sebagai gitaris band Artefak dan web enthusiast."
-    />
-    <meta
-      name="twitter:image"
-      content="https://detapranata.github.io/portofolio/logo.jpg"
-    />
+    <title>Portfolio | I Gede Adeta Raka Pranata</title>
   </head>
-  <body>
-    <header>
-      <div>
-        <img
-          src="images/logo.jpg"
-          alt="Logo"
-          style="width: 50px; border-radius: 50%"
-        />
+  <body id="home">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: rgb(39, 39, 231)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home"
+          ><img
+            class="rounded-circle"
+            src="images/logo.jpg"
+            alt="Logo"
+            width="30"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <h1>I Gede Adeta Raka Pranata</h1>
-      <p>Mahasiswa | ITB STIKOM Bali</p>
-    </header>
+    </nav>
+    <!-- Navbar End -->
 
-    <section class="hero">
+    <!-- Jumbotron Start -->
+    <section class="jumbotron text-center">
       <img
+        class="rounded-circle img-thumbnail"
         src="images/I GEDE ADETA RAKA PRANATA.jpg"
-        alt="I Gede Adeta Raka Pranata"
+        alt="Deta Pranata"
+        width="200"
       />
-      <h2>Hi, I'm I Gede Adeta Raka Pranata</h2>
-      <p>Web Enthusiast, Blending Creativity & Guitarist</p>
-      <div class="buttons">
-        <a href="mailto:adetarakapranata123@gmail.com">Email</a>
-        <a href="pdf/CV_I GEDE ADETA RAKA PRANATA.pdf" download>Download CV</a>
+      <h1 class="display-4">I Gede Adeta Raka Pranata</h1>
+      <p class="lead">Mahasiswa | ITB STIKOM Bali</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L24,154.7C48,181,96,235,144,229.3C192,224,240,160,288,138.7C336,117,384,139,432,144C480,149,528,139,576,117.3C624,96,672,64,720,69.3C768,75,816,117,864,149.3C912,181,960,203,1008,208C1056,213,1104,203,1152,170.7C1200,139,1248,85,1296,74.7C1344,64,1392,96,1416,112L1440,128L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Jumbotron End -->
+
+    <!-- About Start -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center fs-5">
+          <div class="col-md-4">
+            <p>
+              Halo, saya I Gede Adeta Raka Pranata, mahasiswa yang sedang
+              menekuni bidang teknologi sekaligus aktif di dunia musik. Saya
+              percaya bahwa belajar bukan hanya soal teori, tapi juga tentang
+              praktik, konsistensi, dan keberanian mencoba hal baru.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Saat ini saya fokus membangun portofolio di web development dan
+              pengembangan diri, sambil tetap menyalurkan kreativitas lewat band
+              saya, Artefak. Visi saya sederhana: berkembang setiap hari,
+              menghasilkan karya yang bernilai, dan memberi dampak positif bagi
+              orang lain.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="container">
-      <div class="project-card">
-        <img src="images/project1.PNG" alt="Project Thumbnail" />
-        <div class="project-info">
-          <h3>RenayasaDolphin: Modern Landing Page</h3>
-          <p>
-            Membuat landing page modern menggunakan HTML, CSS, dan JavaScript
-            untuk client. Selesai Juni 2024.
-          </p>
-          <a
-            href="https://detapranata.github.io/renayasa-dolphin/"
-            target="_blank"
-            >Lihat di GitHub</a
-          >
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="images/project2.PNG" alt="Project Thumbnail" />
-        <div class="project-info">
-          <h3>Project Bootcamp Fazztrack</h3>
-          <p>
-            Membuat website dari desain yang diberikan oleh bootcamp Fazztrack.
-            Semua kode dibuat sendiri hanya menggunakan HTML & CSS. Selesai
-            Agustus 2025.
-          </p>
-          <a
-            href="https://detapranata.github.io/project-bootcamp-fazztrack/"
-            target="_blank"
-            >Lihat di GitHub</a
-          >
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="images/project3.png" alt="Project Thumbnail" />
-        <div class="project-info">
-          <h3>Deta Pranata: Guitar Academy</h3>
-          <p>
-            Membuat daftar paket kursus gitar, dan juga form pendaftaran online.
-            Dibuat menggunakan HTML & CSS. Selesai Oktober 2024.
-          </p>
-          <a
-            href="https://detapranata.github.io/guitar-academy/"
-            target="_blank"
-            >Lihat di GitHub</a
-          >
-        </div>
-      </div>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#e2edff"
+        fill-opacity="1"
+        d="M0,128L24,160C48,192,96,256,144,250.7C192,245,240,171,288,154.7C336,139,384,181,432,202.7C480,224,528,224,576,229.3C624,235,672,245,720,218.7C768,192,816,128,864,133.3C912,139,960,213,1008,240C1056,267,1104,245,1152,240C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- About End -->
 
-    <footer class="footer">
-      <p>&copy; 2025 I Gede Adeta Raka Pranata. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/detapranata" target="_blank">GitHub</a>
-        <a href="https://www.fiverr.com/detapranata" target="_blank">Fiverr</a>
-        <a href="mailto:adetarakapranata123@gmail.com">Email</a>
+    <!-- Card Start -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/project1.png"
+                class="card-img-top"
+                alt="project1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Renayasa Dolphin: Modern Landing Page
+                </h5>
+                <p class="card-text">
+                  Membuat landing page modern menggunakan HTML, CSS, dan
+                  JavaScript untuk client. Selesai Juni 2024.
+                </p>
+                <a
+                  href="https://detapranata.github.io/renayasa-dolphin/"
+                  class="btn btn-primary"
+                  >Lihat di GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/project2.png"
+                class="card-img-top"
+                alt="project1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bootcamp: Fazztrack</h5>
+                <p class="card-text">
+                  Membuat website dari desain yang diberikan oleh bootcamp
+                  Fazztrack. Semua kode dibuat sendiri hanya menggunakan HTML &
+                  CSS. Selesai Agustus 2025.
+                </p>
+                <a
+                  href="https://detapranata.github.io/project-bootcamp-fazztrack/"
+                  class="btn btn-primary"
+                  >Lihat di GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/project3.png"
+                class="card-img-top"
+                alt="project1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Deta Pranata: Guitar Academy</h5>
+                <p class="card-text">
+                  Membuat daftar paket kursus gitar, berisi paket, harga dan
+                  juga form pendaftaran online. Dibuat menggunakan HTML & CSS.
+                  Selesai Oktober 2024.
+                </p>
+                <a
+                  href="https://detapranata.github.io/guitar-academy/"
+                  class="btn btn-primary"
+                  >Lihat di GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L24,208C48,224,96,256,144,245.3C192,235,240,181,288,176C336,171,384,213,432,224C480,235,528,213,576,208C624,203,672,213,720,224C768,235,816,245,864,256C912,267,960,277,1008,240C1056,203,1104,117,1152,112C1200,107,1248,181,1296,192C1344,203,1392,149,1416,122.7L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Card End -->
+
+    <!-- Contact Start -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="https://formspree.io/f/xldwzljk" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="emailHelp"
+                  name="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="rgb(39, 39, 231)"
+          fill-opacity="1"
+          d="M0,160L24,181.3C48,203,96,245,144,261.3C192,277,240,267,288,224C336,181,384,107,432,112C480,117,528,203,576,213.3C624,224,672,160,720,128C768,96,816,96,864,122.7C912,149,960,203,1008,192C1056,181,1104,107,1152,112C1200,117,1248,203,1296,245.3C1344,288,1392,288,1416,288L1440,288L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="text-center text-white p-4">
+      <p>
+        © 2025 <a class="text-white" href="#home">I Gede Adeta Raka Pranata</a>.
+        All rights reserved.
+      </p>
     </footer>
+    <!-- Footer End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
